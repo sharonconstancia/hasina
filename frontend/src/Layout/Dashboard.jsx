@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import CardInfo from '../components/Card/Card';
 import { useCountBeneficiaireQuery } from '../redux/Slice/beneficiaireslice';
 import {useCountEnqueteurQuery} from '../redux/Slice/userslice';
-import LineChart from '../Components/Chart/LineChart';
-import { lineChartOptions } from '../utils/ChartOptions';
+import LineChart from "../components/Chart/LineChart"
+
 import {useGetlocateurNombreQuery,useGetlocateurQuery} from '../redux/Slice/locateurslice'
 import {toast, ToastContainer} from 'react-toastify';
  
