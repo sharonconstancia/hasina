@@ -8,6 +8,7 @@ import { SkeletonTheme } from 'react-loading-skeleton';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ClerkProvider, ClerkLoading, ClerkLoaded } from '@clerk/clerk-react';
 import {ClipLoader,MoonLoader} from 'react-spinners'
+import { ToastContainer} from 'react-toastify';
 
 
 const clerkFrontendApi = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -15,6 +16,7 @@ const clerkFrontendApi = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ClerkProvider publishableKey={clerkFrontendApi}>
+    <ToastContainer/>
       <ClerkLoading>
         <SkeletonTheme color='#202020' highlightColor='#444'>
           <div className='flex justify-center  items-center mt-[300px]'>
@@ -26,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         
         <Router>
           <Provider store={store}>
-            <App />
+          <App />
           </Provider>
         </Router>
       </ClerkLoaded>

@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import Input from "../../components/Input/Input";
 import Confetti from 'react-confetti';
+import {toast, ToastContainer} from 'react-toastify';
 
 import { PiPlusFill } from "react-icons/pi";
 import {
@@ -62,9 +63,9 @@ const Inscription = () => {
           adresse,
         });
         refetch();
+        
       } catch (error) {
-        console.log(error);
-      }
+        toast.error("erreur de demande ")    }
     };
     useEffect(() => {
      setetudiantId(''),
@@ -73,12 +74,13 @@ const Inscription = () => {
       setmere(''),
       setpere(''),
      setAdresse('')
+  
     }, [isSuccess]);
   return (
     <>
       <div className="container mx-auto h-screen bg-slate-200">
         {
-          isSuccess && <Confetti/>
+          !isLoading && isSuccess && toast.success("Demande avec success")
         }
         <div className="w-8/12  py-5 flex items-center bg-slate-200 h-[600px] justify-center  rounded-xl mx-auto shadow-lg overflow-hidden">
           <div className=" w-full mx-4 bg-slate-200">
