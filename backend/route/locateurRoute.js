@@ -1,4 +1,4 @@
-import {getLocateur,getOneLocateur,createLocateur,deleteLocateur,updateLocateur,getLocateurEtudiant,getLocateurSortie} from '../controllers/locateurControlleer';
+import {getLocateur,getOneLocateur,createLocateur,deleteLocateur,updateLocateur,getLocateurEtudiant,getLocateurSortie} from '../controllers/locateurControlleer.js';
 import {Router} from "express";
 
 const router = Router()

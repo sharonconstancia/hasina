@@ -1,4 +1,4 @@
-import {getInscription,getOneInscription,createInscription,deleteInscription,updateInscription,acceptation} from '../controllers/inscriptionController';
+import {getInscription,getOneInscription,createInscription,deleteInscription,updateInscription,acceptation} from '../controllers/inscriptionController.js';
 import {Router} from "express";
 
 const router = Router()

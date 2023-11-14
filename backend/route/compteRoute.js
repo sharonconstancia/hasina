@@ -1,4 +1,4 @@
-import {getCompte,getOneCompte,createCompte,deleteCompte,updateCompte, getClerkId} from '../controllers/compteController';
+import {getCompte,getOneCompte,createCompte,deleteCompte,updateCompte, getClerkId} from '../controllers/compteController.js';
 import {Router} from "express";
 
 const router = Router()

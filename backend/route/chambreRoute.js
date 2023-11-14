@@ -1,4 +1,4 @@
-import {getChambre,getOneChambre,createChambre,deleteChambre,updateChambre} from '../controllers/chambreController';
+import {getChambre,getOneChambre,createChambre,deleteChambre,updateChambre} from '../controllers/chambreController.js';
 import {Router} from "express";
 
 const router = Router()

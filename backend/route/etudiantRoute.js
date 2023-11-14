@@ -1,4 +1,4 @@
-import {getEtudiant,getOneEtudiant,createEtudiant,deleteEtudiant,updateEtudiant,verify} from '../controllers/etudiantController';
+import {getEtudiant,getOneEtudiant,createEtudiant,deleteEtudiant,updateEtudiant,verify} from '../controllers/etudiantController.js';
 import {Router} from "express";
 
 const router = Router()

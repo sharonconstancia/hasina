@@ -1,4 +1,4 @@
-import {getBloc,getOneBloc,createBloc,deleteBloc,updateBloc} from '../controllers/blocController';
+import {getBloc,getOneBloc,createBloc,deleteBloc,updateBloc} from '../controllers/blocController.js';
 import {Router} from "express";
 
 const router = Router()
