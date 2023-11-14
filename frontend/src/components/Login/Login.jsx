@@ -60,7 +60,7 @@ const Login = () => {
           transition={{ delay: 1, ease: 'easeInOut', duration: 0.8 }}
           className=' col-[2]'
         >
-          <h2 className='text-center font-bold text-4xl py-5 tracking-widest text-indigo-700'>
+          {/* <h2 className='text-center font-bold text-4xl py-5 tracking-widest text-indigo-700'>
             <TypeAnimation
               sequence={['', 1000, 'Se Connecter ', 1000]}
               wrapper='span'
@@ -72,14 +72,14 @@ const Login = () => {
               }}
               repeat={Infinity}
             />
-          </h2>
+          </h2> */}
           <form onSubmit={handleSubmit(onSubmit)} className='mt-10 mx-10 p-4'>
             <div>
               <label
                 htmlFor='true'
                 className='text-indigo-800 block my-2 text-lg font-semibold '
               >
-                Pseudo ou Email
+              Email
               </label>
               <input
                 type='text'
