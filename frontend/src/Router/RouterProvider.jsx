@@ -10,7 +10,6 @@ import { Route, Routes } from 'react-router-dom';
 import Sidebar from '../components/Home/Sidebar';
 import { SidebarContext } from '../Context/SidebarContext';
 import Dashboard from '../Layout/Dashboard';
-// import District from '../Layout/District';
 import Locataire from '../Layout/Locataire';
 import Chambre from '../Layout/Chambre';
 import Bloc from '../Layout/Bloc';
