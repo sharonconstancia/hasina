@@ -11,7 +11,7 @@ import Sidebar from '../components/Home/Sidebar';
 import { SidebarContext } from '../Context/SidebarContext';
 import Dashboard from '../Layout/Dashboard';
 // import District from '../Layout/District';
-import Locateur from '../Layout/Locateur';
+import Locataire from '../Layout/Locataire';
 import Chambre from '../Layout/Chambre';
 import Bloc from '../Layout/Bloc';
 import BodyContext from '../components/Home/BodyContext';
@@ -58,7 +58,7 @@ const RouterProvider = () => {
            <Route path='' element={<BodyContext />}>
              <Route path='/' element={<Dashboard />} />
              <Route path='/bloc' element={<Bloc />} />
-             <Route path='/locateur' element={<Locateur />} />
+             <Route path='/locateur' element={<Locataire />} />
              <Route path='/etudiant' element={<Etudiant />} />
              <Route path='/chambre' element={<Chambre />} />
              <Route path='/demande' element={<Demande />} />

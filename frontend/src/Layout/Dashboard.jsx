@@ -106,7 +106,7 @@ const Dashboard = () => {
       
             icon='beneficiaire'
           />
-          <CardInfo title={'Nombre des locateurs'} number={locateur?.total} icon='enquete' />
+          <CardInfo title={'Nombre des locataires'} number={locateur?.total} icon='enquete' />
 
           <CardInfo title={'Nombre des demandes'} number={locateur?.nombreInscription} icon='enquete' />
         </div>
