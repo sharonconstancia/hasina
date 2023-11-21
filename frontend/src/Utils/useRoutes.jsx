@@ -38,7 +38,7 @@ const useRoutes = () => {
       },
    
       {
-        label: 'Locateur',
+        label: 'Locataire',
         path: '/locateur',
         icon: RiCommunityFill,
         active: pathname === '/locateur',
